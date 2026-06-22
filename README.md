@@ -21,10 +21,17 @@ AWS Account: An active AWS account.
 📂 Terraform Structure
 
 ├── main.tf               # Main Terraform configuration (S3 resources & policies)
+|
 ├── variables.tf          # Input variables (Bucket name, AWS region, tags)
+|
 ├── outputs.tf            # Output values (Website endpoint URL)
+|
 ├── providers.tf          # AWS Provider and Terraform version constraints
+|
 ├── terraform.tfvars      # (Ignored) Environment-specific variable values
+|
 └── src/                  # Website source code directory
+    |
     ├── index.html        # Main landing page
+    |
     └── error.html        # Custom 404 error page
